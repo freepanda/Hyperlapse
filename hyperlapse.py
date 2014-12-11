@@ -151,7 +151,7 @@ def better_stabilization(input_file, output_file):
 
 	print "smoothing subsampled motion..."
 
-	window = int(6 * fps)
+	window = int(6 * fps / SPEED_UP)
 	if window % 2 == 0:
 		window += 1
 	print "(using window size of " + str(window) + ")"
