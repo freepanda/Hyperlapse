@@ -10,6 +10,10 @@ This code requires the following Python libraries to be installed:
 - Matplotlib
 - FFmpeg
 
+To run the code, first, open hyperlapse.py and define the input and output paths for the video (the variables INPUT_VIDEO_PATH and OUTPUT_VIDEO_PATH) in the Äù"globalsÄ" section at the top of the file. Additionally in the "globals" section, the user can define other parameters such as how much to speed the video up by (variable SPEED_UP) and the output video codec (variable FOURCC).
+Once these parameters have been set, run in the command line: 
+     python hyperlapse.py
+
 Blog writeup: [http://www.sprestwood.com/2014/12/hyperlapse-video-with-python.html](http://www.sprestwood.com/2014/12/hyperlapse-video-with-python.html)
 
 Example outputs from the program are available here: [https://www.flickr.com/photos/sam_bot5/sets/72157649640891046](https://www.flickr.com/photos/sam_bot5/sets/72157649640891046)
