@@ -10,7 +10,9 @@ This code requires the following Python libraries to be installed:
 - Matplotlib
 - FFmpeg
 
-I plan to do a formal write-up about this on my blog, which I'll link to here when it's been written. Example outputs from the program are available here: [https://www.flickr.com/photos/sam_bot5/sets/72157649640891046](https://www.flickr.com/photos/sam_bot5/sets/72157649640891046)
+Blog write: [http://www.sprestwood.com/2014/12/hyperlapse-video-with-python.html](http://www.sprestwood.com/2014/12/hyperlapse-video-with-python.html)
+
+Example outputs from the program are available here: [https://www.flickr.com/photos/sam_bot5/sets/72157649640891046](https://www.flickr.com/photos/sam_bot5/sets/72157649640891046)
 
 You can feel free to use this code for whatever you want, with the following stipulations:
 
