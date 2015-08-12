@@ -3,6 +3,7 @@ __source__ = "http://scipy-central.org/item/49/1/savitzky-golay-filter"
 
 import numpy as np
 from scipy.misc import *
+import scipy.special
 
 def savgol(x, window_size=3, order=2, deriv=0, rate=1):
     ''' Savitzky-Golay filter '''
@@ -31,7 +32,7 @@ def savgol(x, window_size=3, order=2, deriv=0, rate=1):
     # Construct Vandermonde matrix, its inverse, and the Savitzky-Golay coefficients   
     a = [[ii**jj for jj in order_range] for ii in range(-half_window, half_window+1)]
     pa = np.linalg.pinv(a)
-    sg_coeff = pa[deriv] * rate**deriv * factorial(deriv)
+    sg_coeff = pa[deriv] * rate**deriv * scipy.special.factorial(deriv)
       
     # Get the coefficients for the fits at the beginning and at the end of the data
     coefs = np.array(order_range)**np.sign(deriv)
